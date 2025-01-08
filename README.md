@@ -4,18 +4,18 @@ This project implements an Image Captioning Model inspired by the research paper
 
 ### Features
 
-CNN Encoder: Extracts visual features from input images using pre-trained models like InceptionV3 or ResNet.
-LSTM Decoder: Generates natural language captions by processing the encoded image features.
-End-to-End Learning: Seamlessly integrates vision and language tasks in a single pipeline.
-Custom Dataset Support: Works with datasets of images and captions, such as MS COCO.
-Evaluation Metrics: Implements BLEU scores to assess caption quality.
+- CNN Encoder: Extracts visual features from input images using pre-trained models like InceptionV3 or ResNet.
+- LSTM Decoder: Generates natural language captions by processing the encoded image features.
+- End-to-End Learning: Seamlessly integrates vision and language tasks in a single pipeline.
+- Custom Dataset Support: Works with datasets of images and captions, such as FLICKER8K.
+- Evaluation Metrics: Implements BLEU scores to assess caption quality.
 
 ### Architecture
 
-Encoder:
+- Encoder:
 A pre-trained CNN extracts feature vectors from input images.
 Fully connected layers reduce the dimensionality of these features.
 
-Decoder:
+- Decoder:
 An LSTM processes the image features and generates captions word by word.
 The model uses teacher forcing during training to improve sequence prediction.
